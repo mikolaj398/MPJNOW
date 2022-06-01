@@ -1,0 +1,10 @@
+env/
+SROIE2019/
+__pycache__/
+models/
+.vscode/
+cached*
+logs.txt
+layoutlm-base/
+runs/
+results/

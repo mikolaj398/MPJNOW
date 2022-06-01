@@ -1,0 +1,41 @@
+{
+    "data_dir": "dataset/",
+    "model_dir": "layoutlm-base/",
+    "save_metric_dir": "metrics/",
+    "batch_size": 16,
+    "epochs": 10,
+    "device": "cpu",
+
+    "tested_params": {
+        "num_hidden_layers": [
+            15,
+            20,
+            25,
+            35
+        ],
+        "num_attention_heads": [
+            16,
+            24,
+            32,
+            128
+        ],
+        "hidden_act": [
+            "gelu",
+            "relu",
+            "swish"
+        ],
+        "attention_probs_dropout_prob": [
+            0.1,
+            0.2,
+            0.4,
+            0.7
+        ]
+    },
+
+    "max_seq_length": 128,
+    "local_rank": -1,
+    "model_name_or_path": "layoutlm",
+    "overwrite_cache": true,
+    "model_type": "layoutlm",
+    "weight_decay": 0
+}
